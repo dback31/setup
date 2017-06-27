@@ -49,8 +49,12 @@ $ prebuilts/misc/linux-x86/ccache/ccache -M 50G (or however much you want).
 ```
 
 After this, load up the compilation commands:
+```
 $ . build/envsetup.sh
+```
 
 Then, tell it which device you want to make and let it roll:
+```
 $ breakfast <device> OR lunch
 $ mka bacon
+```
