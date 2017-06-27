@@ -15,12 +15,16 @@ $ ./ubuntu1604linuxmint18.sh
 #  Step Two: Configure Repo and Git  #
 ######################################
 
+```
 $ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 $ chmod a+x ~/bin/repo
+```
 
 Then run these commands to get git all working:
+```
 $ git config --global user.name "Your Name"
 $ git config --global user.email "you@example.com"
+```
 
 #####################################
 #  Step Three: Download the source  #
