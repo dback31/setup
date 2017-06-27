@@ -8,7 +8,7 @@
 $ cd ~/
 $ git clone https://github.com/dback31/setup.git scripts
 $ cd scripts
-$ ./ubuntu1604linuxmint18.sh
+$ bash ./ubuntu1604linuxmint18.sh
 ```
 
 ######################################
@@ -16,7 +16,7 @@ $ ./ubuntu1604linuxmint18.sh
 ######################################
 
 ```
-$ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+$ curl https://storage.googleapis.com/git-repo-downloads/repo > repo
 $ chmod a+x ~/bin/repo
 ```
 
@@ -32,7 +32,7 @@ $ git config --global user.email "you@example.com"
 
 ```
 $ cd ~/scripts
-$ ./source.sh
+$ bash ./source.sh
 ```
 
 ##########################
