@@ -1,7 +1,3 @@
-	mkdir ~/bin
-	PATH=~/bin:$PATH
-	curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
-	chmod a+x ~/bin/repo
 	mkdir -p ~/android
 	cd ~/android
 	repo init -u https://github.com/OneRomOne-N/android.git -b nuclear-n
