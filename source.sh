@@ -1,5 +1,9 @@
-	mkdir -p ~/mm
-	cd ~/mm
+	mkdir ~/bin
+	PATH=~/bin:$PATH
+	curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+	chmod a+x ~/bin/repo
+	mkdir -p ~/android
+	cd ~/android
 	repo init -u https://github.com/OneRomOne-N/android.git -b nuclear-n
 	repo sync --force-broken --force-sync --no-clone-bundle --quiet -j1
 	git clone https://github.com/LineageOS/android_device_leeco_s2.git -b cm-14.1 device/leeco/s2
