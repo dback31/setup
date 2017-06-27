@@ -7,6 +7,5 @@ $ cd ~/
 $ git clone https://github.com/dback31/setup.git scripts
 $ cd scripts
 $ ./ubuntu1604linuxmint18.sh
-$ ./repo.sh
 $ ./source.sh
 ```
