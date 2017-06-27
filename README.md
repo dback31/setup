@@ -1,1 +1,1 @@
-#Source: https://github.com/akhilnarang/scripts/tree/master/setup
+#Setup: https://github.com/akhilnarang/scripts/tree/master/setup
