@@ -29,18 +29,9 @@ if [ ! -d "$CCACHE_DIR" ]; then
 fi
 ```
 
-#####################################
-#  Step Three: Download the source  #
-#####################################
-
-```
-$ cd ~/scripts
-$ bash ./source.sh
-```
-
-##########################
-#  Step Four: Build it!  #
-##########################
+###########################
+#  Step Three: Build it!  #
+###########################
 
 Load up the compilation commands:
 ```
