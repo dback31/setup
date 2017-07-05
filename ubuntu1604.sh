@@ -19,3 +19,5 @@ mkdir -p ~/octos
 curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo
 sudo apt-get update && sudo apt-get upgrade
 sudo apt-get install libcap-dev texinfo automake autoconf libgmp-dev libexpat-dev python-dev liblz4-tool
+cd ~/octos
+repo init -u https://github.com/Team-OctOS/platform_manifest.git -b oct-14.1 && repo sync
