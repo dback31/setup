@@ -8,22 +8,25 @@
 $ cd ~/
 $ git clone https://github.com/dback31/setup.git scripts
 $ cd scripts
-$ bash ./ubuntu1604linuxmint18.sh
+$ bash ./ubuntu1604.sh
 ```
 
-######################################
-#  Step Two: Configure Repo and Git  #
-######################################
+###################################
+#  Step Two: Configure ~/.bashrc  #
+###################################
 
 ```
-$ curl https://storage.googleapis.com/git-repo-downloads/repo > repo
-$ chmod a+x ~/bin/repo
-```
+# OctOs Build Flags
+export CCACHE_DIR=$HOME/.ccache
+export USE_CCACHE=1
+export USE_PREBUILT_CHROMIUM=1
 
-Then run these commands to get git all working:
-```
-$ git config --global user.name "Your Name"
-$ git config --global user.email "you@example.com"
+alias git-pl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+#set up ccache if not present
+if [ ! -d "$CCACHE_DIR" ]; then
+    $HOME/octos/prebuilts/misc/linux-x86/ccache/ccache -M 50G
+fi
 ```
 
 #####################################
@@ -39,26 +42,12 @@ $ bash ./source.sh
 #  Step Four: Build it!  #
 ##########################
 
-```
-$ nano ~/.bashrc
-```
-- Append "export USE_CCACHE=1" to the end of this file
-```
-$ source ~/.bashrc
-```
-
-After that, run this command if you used the manual method of setup above
-```
-$ prebuilts/misc/linux-x86/ccache/ccache -M 50G (or however much you want).
-```
-
-After this, load up the compilation commands:
+Load up the compilation commands:
 ```
 $ . build/envsetup.sh
 ```
 
 Then, tell it which device you want to make and let it roll:
 ```
-$ breakfast <device> OR lunch
-$ mka bacon
+$ brunch s2
 ```
