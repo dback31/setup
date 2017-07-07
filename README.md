@@ -29,10 +29,6 @@ export USE_CCACHE=1
 ```
 
 ```
-source ~/.bashrc
-```
-
-```
 # OctOs Build Flags
 export CCACHE_DIR=$HOME/.ccache
 export USE_CCACHE=1
@@ -44,6 +40,10 @@ alias git-pl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Cres
 if [ ! -d "$CCACHE_DIR" ]; then
     $HOME/octos/prebuilts/misc/linux-x86/ccache/ccache -M 50G
 fi
+```
+
+```
+source ~/.bashrc
 ```
 
 #####################################
