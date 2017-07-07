@@ -1,3 +1,5 @@
+#OCT OS
+
 #Quelle: https://github.com/akhilnarang/scripts/tree/master/setup
 
 #######################################
@@ -8,12 +10,27 @@
 $ cd ~/
 $ git clone https://github.com/dback31/setup.git scripts
 $ cd scripts
-$ bash ./ubuntu1604.sh
+$ bash ./1.sh
+$ bash ./2.sh
+$ bash ./2a.sh
+$ bash ./2b.sh
+$ bash ./3.sh
 ```
 
 ###################################
 #  Step Two: Configure ~/.bashrc  #
 ###################################
+
+nano ~/.bashrc
+
+```
+export PATH=~/bin:$PATH
+export USE_CCACHE=1
+```
+
+```
+source ~/.bashrc
+```
 
 ```
 # OctOs Build Flags
@@ -29,8 +46,24 @@ if [ ! -d "$CCACHE_DIR" ]; then
 fi
 ```
 
+#####################################
+#  Step Three: Download Rom Source  #
+#####################################
+
+```
+git config --global user.name ""
+git config --global user.email ""
+```
+
+```
+$ cd scripts
+$ bash ./4.sh
+$ bash ./5.sh
+$ bash ./6.sh
+```
+
 ###########################
-#  Step Three: Build it!  #
+#  Step Four: Build it!   #
 ###########################
 
 Load up the compilation commands:
